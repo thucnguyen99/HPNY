@@ -53,14 +53,14 @@ return false;
 }
 }
 
-// To To Disable ctrl+c, ctrl+u
+// To To Disable ctrl+c, ctrl+u, ctrl+a
 
 jQuery(document).ready(function($){
 $(document).keydown(function(event) {
 var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
 
-if (event.ctrlKey && (pressedKey == "a" || pressedKey == "u")) {
-alert('Sorry, This Functionality Has Been Disabled!');
+if (event.ctrlKey && (pressedKey == "c" || pressedKey == "u" || pressedKey == "a")) {
+alert('Chúc mừng năm mới!');
 //disable key press porcessing
 return false;
 }
